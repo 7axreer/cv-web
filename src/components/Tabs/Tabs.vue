@@ -1,13 +1,14 @@
 <script setup>
     import { skills } from "../../constants/data";
     import { ref } from "vue";
+    import langData from "@/constants/lang";
+    import { useLangStore } from "@/stores/langStore";
+    const changeIcon = useLangStore();
 
     const activeTab = ref("tab-1");
-
     function setActive(tab) {
         activeTab.value = tab;
     }
-
     function isActive(tab) {
         return activeTab.value === tab;
     }
@@ -24,7 +25,9 @@
             <div class="tabs__content">
                 <div class="tabs__content-list">
                     <ul class="tabs__content-item">
-                        <li @click="setActive('tab-1')" :class="{ active: isActive('tab-1') }" class="tabs__content-link">Technical Skills</li>
+                        <li @click="setActive('tab-1')" :class="{ active: isActive('tab-1') }" class="tabs__content-link">
+                            {{ langData.techSkills[changeIcon.icon ? "en" : "ru"] }}
+                        </li>
                         <li @click="setActive('tab-2')" :class="{ active: isActive('tab-2') }" class="tabs__content-link">Problem-Solving Skills</li>
                         <li @click="setActive('tab-3')" :class="{ active: isActive('tab-3') }" class="tabs__content-link">Soft Skills</li>
                     </ul>

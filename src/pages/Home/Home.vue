@@ -1,19 +1,27 @@
+<script setup>
+    import langData from "@/constants/lang";
+    import { useLangStore } from "@/stores/langStore";
+    const changeIcon = useLangStore();
+
+
+</script>
+
 <template>
     <header id="header" class="header">
         <div class="container">
             <div class="header__content">
                 <div class="header__content-left">
-                    <p>Hi, I'm</p>
-                    <h1>Saidaxror</h1>
-                    <p>a full-stack web developer.</p>
+                    <p>{{ langData.hi[changeIcon.icon ? "en" : "ru"] }}</p>
+                    <h1>{{ langData.name[changeIcon.icon ? "en" : "ru"] }}</h1>
+                    <p>{{ langData.info[changeIcon.icon ? "en" : "ru"] }}</p>
                 </div>
 
                 <div class="header__content-right">
                     <div class="header__content-right-img"></div>
                     <div class="header__content-right-text">
-                        <span>Sobirov Saidaxror</span>
-                        <span>Full-Stack Developer</span>
-                        <span><i class="far fa-globe-asia"></i>Tashkent</span>
+                        <span>{{ langData.cardName[changeIcon.icon ? "en" : "ru"] }}</span>
+                        <span>{{ langData.cardInfo[changeIcon.icon ? "en" : "ru"] }}</span>
+                        <span><i class="far fa-globe-asia"></i>{{ langData.cardCity[changeIcon.icon ? "en" : "ru"] }}</span>
                     </div>
                     <div class="header__content-right-mail">
                         <i class="fal fa-envelope"></i>
@@ -21,7 +29,7 @@
                     </div>
                     <div class="header__content-right-exp">
                         <i class="fal fa-id-card"></i>
-                        <span>1 year of experience</span>
+                        <span>{{ langData.cardExperience[changeIcon.icon ? "en" : "ru"] }}</span>
                     </div>
                     <div class="header__content-right-skills">
                         <span>Nuxt</span>

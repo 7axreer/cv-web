@@ -1,9 +1,19 @@
 <script setup>
     import Navbar from "@/components/Navbar/Navbar.vue";
+    import { ref } from "vue";
+    import { useLangStore } from "./stores/langStore";
+    const changeValue = useLangStore();
+
+
+    const langIcon = ref(true);
+    function changeIcon() {
+        langIcon.value = !langIcon.value;
+        changeValue.changeValueIcon();
+    }
 </script>
 
 <template>
-    <Navbar />
+    <Navbar :langIcon="langIcon" :changeIcon="changeIcon" />
 
     <RouterView v-slot="{ Component, route }">
         <transition :name="route.meta.transition || 'fade'">
