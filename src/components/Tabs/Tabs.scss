@@ -25,12 +25,14 @@
             transition: 0.1s linear;
             background: transparent;
             padding: 5px 15px;
+            width: 280px;
+            text-align: start;
             border-radius: 8px;
         }
 
         //! Window
         &-window {
-            width: 1000px;
+            width: 955px;
             height: 70vh;
             background: $cSecond;
             border-radius: 16px;
@@ -42,9 +44,9 @@
                         font-size: 28px;
                         font-weight: 700;
                         line-height: 30px;
+                        padding-bottom: 20px;
                     }
                     .cart {
-                        padding-top: 20px;
                         place-self: center;
                         width: 100%;
                         display: flex;
@@ -52,7 +54,10 @@
                         align-items: center;
                         flex-wrap: wrap;
                         gap: 10px;
-                        padding-bottom: 10px;
+                        padding-bottom: 15px;
+                        &:last-child {
+                            padding-bottom: 10px;
+                        }
                         span {
                             list-style: disc;
                             font-weight: 600;
@@ -60,7 +65,7 @@
                         }
 
                         ul {
-                            width: 800px;
+                            width: 740px;
                             display: flex;
                             gap: 10px;
                             li {
@@ -98,6 +103,24 @@
                             }
                         }
                     }
+                }
+            }
+        }
+
+        &-solving {
+            display: grid;
+            gap: 15px;
+            p {
+                font-size: 16px;
+            }
+            ul {
+                span {
+                    font-size: 19px;
+                    font-weight: 600;
+                    padding-bottom: 5px;
+                }
+                li {
+                    padding-left: 15px;
                 }
             }
         }

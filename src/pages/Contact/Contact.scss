@@ -1,0 +1,64 @@
+.contact {
+    padding-top: 100px;
+    h1 {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        &-left {
+            display: grid;
+            gap: 30px;
+            div {
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                background: $cSecond;
+                border-radius: 4px;
+                i {
+                    width: 35px;
+                    height: 35px;
+                    border: 1px solid $cFirst;
+                    display: grid;
+                    place-content: center;
+                    border-radius: 4px;
+                }
+                a {
+                    color: $cBlack;
+                }
+            }
+        }
+        &-right {
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+                gap: 10px;
+                input {
+                    padding: 10px;
+                    background: $cSecond;
+                    font-size: 14px;
+                    border-radius: 4px;
+                }
+                textarea {
+                    padding: 10px;
+                    background: $cSecond;
+                    font-size: 14px;
+                    border-radius: 4px;
+                }
+                button {
+                    height: 40px;
+                    background: $cSecond;
+                    font-weight: 600;
+                    font-size: 16px;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}

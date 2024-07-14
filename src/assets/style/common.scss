@@ -32,6 +32,12 @@ input {
     outline: none;
 }
 
+textarea {
+    border: none;
+    outline: none;
+    resize: none;
+}
+
 body {
     background: $cBody;
 }

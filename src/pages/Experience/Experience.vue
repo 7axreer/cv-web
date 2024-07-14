@@ -2,6 +2,12 @@
 
 <template>
     <section class="experience">
-        <h1>Experience page</h1>
+        <div class="container">
+            <div class="experience__content">
+                <h1>
+                    Work Experience
+                </h1>
+            </div>
+        </div>
     </section>
 </template>
