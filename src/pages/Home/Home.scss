@@ -12,18 +12,18 @@
             flex-direction: column;
             h1 {
                 font-weight: 800;
-                font-size: 62px;
-                line-height: 62px;
+                font-size: 80px;
+                line-height: 80px;
             }
             p {
                 padding-top: 7px;
-                font-size: 18px;
+                font-size: 22px;
                 font-weight: 500;
             }
         }
         &-right {
             padding: 40px 20px 20px 20px;
-            background: #cdc9c3;
+            background: $cSecond;
             border-radius: 16px;
             display: grid;
             place-items: center;
@@ -38,8 +38,7 @@
             }
             &-text {
                 width: 100%;
-                // background: #FBF7F0;
-                border: 1px solid #fbf7f0;
+                border: 1px solid $cBlack;
                 display: grid;
                 place-items: center;
                 gap: 6px;
@@ -48,30 +47,31 @@
                 span {
                     i {
                         margin-right: 10px;
+                        color: $cText;
                     }
                 }
             }
             &-mail {
                 width: 100%;
-                // background: #FBF7F0;
-                border: 1px solid #fbf7f0;
+                border: 1px solid $cBlack;
                 display: flex;
                 align-items: center;
                 justify-content: start;
                 gap: 10px;
                 padding: 10px 20px;
                 border-radius: 7px;
+                color: $cBody;
             }
             &-exp {
                 width: 100%;
-                // background: #FBF7F0;
-                border: 1px solid #fbf7f0;
+                border: 1px solid $cBlack;
                 display: flex;
                 align-items: center;
                 justify-content: start;
                 gap: 10px;
                 padding: 10px 20px;
                 border-radius: 7px;
+                color: $cBody;
             }
             &-skills {
                 display: flex;
@@ -80,8 +80,7 @@
                 span {
                     border-radius: 3px;
                     padding: 2px 10px;
-                    // background: #FBF7F0;
-                    border: 1px solid #fbf7f0;
+                    border: 1px solid $cBlack;
                 }
             }
             &-social {
@@ -89,8 +88,7 @@
                 display: flex;
                 gap: 5px;
                 a {
-                    // background: #FBF7F0;
-                    border: 1px solid #fbf7f0;
+                    border: 1px solid $cBlack;
                     width: 45px;
                     height: 45px;
                     display: grid;
@@ -98,7 +96,7 @@
                     font-size: 21px;
                     border-radius: 3px;
                     i {
-                        color: #555555;
+                        color: $cBlack;
                     }
                 }
             }

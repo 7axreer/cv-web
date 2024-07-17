@@ -1,8 +1,9 @@
-$cBody: #fbf7f0;
+$cBody: #ffffff;
 $cFirst: #555555;
-$cSecond: #cdc9c3;
+$cSecond: #eaf3ff;
+$cThird: #f3ebdf;
 $cBlack: #000000;
-// $cWhite: #555555;
+$cText: #142033;
 
 * {
     box-sizing: border-box;
@@ -10,8 +11,9 @@ $cBlack: #000000;
     list-style: none;
     padding: 0;
     margin: 0;
-    font-family: "OpenSans";
-    font-weight: 400;
+    font-family: "Manrope";
+    font-weight: 500;
+    color: $cText;
 }
 
 .container {
@@ -69,4 +71,14 @@ img {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
 }

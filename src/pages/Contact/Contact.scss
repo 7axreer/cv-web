@@ -6,8 +6,10 @@
         font-weight: 700;
     }
     &__content {
+        padding-top: 50px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin: 0 40px;
         gap: 30px;
         &-left {
             display: grid;
@@ -42,19 +44,34 @@
                 input {
                     padding: 10px;
                     background: $cSecond;
-                    font-size: 14px;
+                    font-size: 18px;
                     border-radius: 4px;
+                }
+                div {
+                    position: relative;
+                    width: 100%;
+                    input {
+                        width: 100%;
+                        padding-left: 60px;
+                    }
+                    span {
+                        position: absolute;
+                        font-size: 18px;
+                        top: 50%;
+                        left: 33px;
+                        transform: translate(-50%, -50%);
+                    }
                 }
                 textarea {
                     padding: 10px;
                     background: $cSecond;
-                    font-size: 14px;
+                    font-size: 18px;
                     border-radius: 4px;
                 }
                 button {
                     height: 40px;
                     background: $cSecond;
-                    font-weight: 600;
+                    font-weight: 700;
                     font-size: 16px;
                     border-radius: 4px;
                 }

@@ -4,7 +4,6 @@
     import { useLangStore } from "./stores/langStore";
     const changeValue = useLangStore();
 
-
     const langIcon = ref(true);
     function changeIcon() {
         langIcon.value = !langIcon.value;

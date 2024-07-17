@@ -36,13 +36,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: #cdc9c3;
+            background: $cSecond;
             padding: 15px 20px;
             border-radius: 12px;
             width: 620px;
             &-link > a {
                 font-weight: 500;
-                color: $cFirst;
+                color: $cText;
             }
         }
     }
