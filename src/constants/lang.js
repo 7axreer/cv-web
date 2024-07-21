@@ -187,6 +187,58 @@ const langData = {
         en: `Certifications Earned`,
         ru: ` Полученные Сертификаты`,
     },
+    contactMe: {
+        en: `Contact Me`,
+        ru: ` Свяжитесь со мной`,
+    },
+    contactName: {
+        en: `Your name`,
+        ru: ` Ваше имя`,
+    },
+    contactMessage: {
+        en: `Your message`,
+        ru: ` Ваше сообщение`,
+    },
+    contactButton: {
+        en: `SEND`,
+        ru: ` ОТПРАВИТЪ`,
+    },
+    workDev: {
+        en: `As a Developer`,
+        ru: ` Как Разработчик`,
+    },
+    workAdm: {
+        en: `As an Administrator`,
+        ru: ` Как Администратор`,
+    },
+    workDes: {
+        en: `As a Graphic Designer`,
+        ru: `Как График Дизайнер`,
+    },
+    workDevTitle: {
+        en: `Front-end Developer`,
+        ru: `Фронтенд Разработчик`,
+    },
+    workDevDesc: {
+        en: `I am currently working as a web developer on Upwork, where I create and maintain websites, ensuring they are user-friendly and visually appealing.`,
+        ru: `В настоящее время я работаю веб-разработчиком в Upwork, где создаю и поддерживаю веб-сайты, обеспечивая их удобство и визуальную привлекательность.`,
+    },
+    workAdmTitle: {
+        en: `Administrator`,
+        ru: `Администратор`,
+    },
+    workAdmDesc: {
+        en: `I worked as an administrator at an education center. My role involved coordinating schedules, handling inquiries, and ensuring a smooth and efficient learning environment.`,
+        ru: `Я работала администратором в образовательном центре. Моя роль заключалась в координации графиков, обработке запросов и обеспечении бесперебойной и эффективной среды обучения.`,
+    },
+    workDesTitle: {
+        en: `Graphic Designer`,
+        ru: `Графический дизайнер`,
+    },
+    workDesDesc: {
+        en: `I worked as a graphic designer at Asr Innovation Learning Center. I have made many SMD posts.`,
+        ru: `Я работал графическим дизайнером в Asr Innovation Learning Center. Я сделал много пост SMD.`,
+    },
 };
 
 export default langData;

@@ -1,17 +1,27 @@
 <script setup>
     import { useFormStore } from "@/stores/formStore";
+    import langData from "@/constants/lang";
+    import { useLangStore } from "@/stores/langStore";
+    import { ref, computed } from "vue";
 
     const formStore = useFormStore();
-
     const sendForm = () => {
         formStore.onSubmit();
     };
+    const changeIcon = useLangStore();
+
+    const contactName = computed(() => {
+        return langData.contactName[changeIcon.icon ? "en" : "ru"];
+    });
+    const contactMessage = computed(() => {
+        return langData.contactMessage[changeIcon.icon ? "en" : "ru"];
+    });
 </script>
 
 <template>
     <section class="contact">
         <div class="container">
-            <h1>Contact Me</h1>
+            <h1>{{ langData.contactMe[changeIcon.icon ? "en" : "ru"] }}</h1>
             <div class="contact__content">
                 <div class="contact__content-left">
                     <div>
@@ -29,13 +39,18 @@
                 </div>
                 <div class="contact__content-right">
                     <form action="" class="contact__content-right-form" @submit.prevent="sendForm">
-                        <input v-model="formStore.formData.name" placeholder="Full Name" />
+                        <input v-model="formStore.formData.name" :placeholder="contactName" required />
                         <div>
-                            <input @input="formStore.liveCheckOut" type="number" v-model="formStore.formData.number" placeholder="94-006-88-41" />
+                            <input
+                                @input="formStore.liveCheckOut"
+                                type="number"
+                                v-model="formStore.formData.number"
+                                placeholder="94-006-88-41"
+                                required />
                             <span>+998</span>
                         </div>
-                        <textarea v-model="formStore.formData.message" placeholder="Message"></textarea>
-                        <button type="submit">SUBMIT</button>
+                        <textarea v-model="formStore.formData.message" :placeholder="contactMessage" required></textarea>
+                        <button type="submit">{{ langData.contactButton[changeIcon.icon ? "en" : "ru"] }}</button>
                     </form>
                 </div>
             </div>

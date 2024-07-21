@@ -46,6 +46,7 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="tabs__content-window">
                     <div class="tabs__content-window-panel">
                         <div v-show="isActive('tab-1')" class="tabs__content-window-panel-fx">

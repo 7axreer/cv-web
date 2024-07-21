@@ -1,0 +1,86 @@
+.experience {
+    padding-top: 100px;
+    h1 {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+    }
+    &__content {
+        padding-top: 50px;
+        display: grid;
+        gap: 20px;
+        &-tabs {
+            display: flex;
+            justify-content: center;
+            &-list {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                background: $cSecond;
+                padding: 10px;
+                border-radius: 16px;
+                position: relative;
+                &-link {
+                    cursor: pointer;
+                    font-size: 18px;
+                    font-weight: 600;
+                    transition: 0.1s linear;
+                    background: transparent;
+                    padding: 5px 15px;
+                    width: 280px;
+                    text-align: start;
+                    border-radius: 8px;
+                    display: flex;
+                    justify-content: center;
+                    gap: 5px;
+                    img {
+                        width: 18px;
+                    }
+                }
+            }
+        }
+        &-window {
+            width: 100%;
+            background: $cSecond;
+            padding: 20px;
+            border-radius: 16px;
+            height: 60vh;
+            overflow: hidden;
+            overflow: scroll;
+
+            &-panel {
+                display: grid;
+                gap: 20px;
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}
+
+.dev__content {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    &-first {
+        border: 1px solid $cBlack;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 16px;
+    }
+    &-name {
+        font-size: 21px;
+        font-weight: 800;
+    }
+    &-job {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+.active {
+    background: $cBody;
+}
