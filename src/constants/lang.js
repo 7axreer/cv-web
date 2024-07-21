@@ -239,6 +239,10 @@ const langData = {
         en: `I worked as a graphic designer at Asr Innovation Learning Center. I have made many SMD posts.`,
         ru: `Я работал графическим дизайнером в Asr Innovation Learning Center. Я сделал много пост SMD.`,
     },
+    theEnd: {
+        en: `I worked as a graphic designer at Asr Innovation Learning Center. I have made many SMD posts.`,
+        ru: `Я работал графическим дизайнером в Asr Innovation Learning Center. Я сделал много пост SMD.`,
+    },
 };
 
 export default langData;
