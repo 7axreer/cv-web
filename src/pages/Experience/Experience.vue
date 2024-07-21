@@ -3,7 +3,6 @@
     import { useLangStore } from "@/stores/langStore";
     import { ref } from "vue";
     const changeIcon = useLangStore();
-    import Dev from "@/components/Dev/Dev.vue";
 
     const activeTab = ref("tab-1");
     function setActive(tab) {
